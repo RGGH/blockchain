@@ -22,3 +22,8 @@ print(d2.digest())
 
 from datetime import datetime
 timestamp_0 = datetime.timestamp(datetime.fromisoformat('2011-11-04 00:05:23.111'))
+
+
+'''You have to be careful what you mean by "string". 
+A string is a sequence of characters, while hash function usually process byte sequences. 
+If you use different encodings to map strings to byte sequences this can give you different hashvalues'''
